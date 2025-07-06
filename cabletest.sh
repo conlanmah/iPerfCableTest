@@ -97,7 +97,7 @@ if [ "${#eth_ifaces[@]}" -lt 2 ]; then
     echo "Less than 2 interfaces found, cannot continue."
     echo "Exiting..."
     exit 1
-elif [ "${#eth_ifaces[@]}" -lt 2 ]; then
+elif [ "${#eth_ifaces[@]}" -eq 2 ]; then
     explain "Exactly 2 interfaces found."
     int1=${eth_ifaces[0]}
     int2=${eth_ifaces[1]}
